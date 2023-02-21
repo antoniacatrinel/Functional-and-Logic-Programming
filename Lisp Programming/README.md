@@ -13,6 +13,14 @@ A binary tree is memorised in the following two ways:
 
 Convert a tree of type 1 to type 2.
 
+### Count numerical atoms
+Write a function to return the number of all numerical atoms in a list at superficial level.
+
+### Count sublists any level
+Write a function to determine the number of all sublists of a given list, on any level. 
+A sublist is either the list itself, or any element that is a list, at any level. \
+*Example: (1 2 (3 (4 5) (6 7)) 8 (9 10)) => 5 lists: (list itself, (3 ...), (4 5), (6 7), (9 10)).*
+
 ### Depth list
 Compute the depth of a non-linear list.
 
