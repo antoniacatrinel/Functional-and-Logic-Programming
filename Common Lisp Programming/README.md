@@ -1,30 +1,50 @@
-# Prolog Programming
+# Lisp Programming
 
-Implement in **SWI Prolog** the following problems:
+Implement in **Common Lisp** the following problems:
 
-### Create sublist
-Write a predicate to create the sublist (lm, ..., ln) from the list (l1, ..., lk), where m >= 1 and n <= k.
+### Association list
+Write a function to return an association list with the two lists given as parameters. \
+*Example: (A B C) (X Y Z) => ((A.X) (B.Y) (C.Z)).*
 
-### Frequency pairs
-Create from a list of numbers, a list of pairs (N, Count), where Count is the number of times N appears in the list.\
-*Example: [11, 22, 11, 22, 11, 33, 11] => [[11, 4], [22, 2], [33, 1]].*
+### Convert binary tree
+A binary tree is memorised in the following two ways:
+ 1. (node no-subtrees list-subtree-1 list-subtree-2 ...)
+ 2. (node (list-subtree-1) (list-subtree-2) ...)
 
-### Longest even sequence
-Define a predicate to determine the longest sequence of consecutive even numbers (if exist more maximal sequences one of them).
+Convert a tree of type 1 to type 2.
 
-### Lowest common multiple
-Given a numerical linear list consisting of integers, write a predicate to compute the lowest common multiple of all elements from the list.
-*Example: [2 4 3 5] => 60, [2 8 4 5 1] => 40, [4 3 9 0 2] => 36, [2 7 3 5 11] => 2310.*
+### Count numerical atoms
+Write a function to return the number of all numerical atoms in a list at superficial level.
 
-### Mountain sequence
-The list a1, ..., an is given and it consists of distinct integers. Write a predicate to determine all subsets with aspect of "mountain" (a set has a "mountain" aspect if the elements increase to a certain point and then decrease).
+### Count sublists any level
+Write a function to determine the number of all sublists of a given list, on any level. 
+A sublist is either the list itself, or any element that is a list, at any level. \
+*Example: (1 2 (3 (4 5) (6 7)) 8 (9 10)) => 5 lists: (list itself, (3 ...), (4 5), (6 7), (9 10)).*
 
-### Remove non primes
-Remove all non-prime numbers from a list.
+### Depth list
+Compute the depth of a non-linear list.
 
-### Replace sublist
-For a heterogeneous list, formed from integer numbers and lists of numbers, define a predicate to replace every sublist with the longest sequences of even numbers from that sublist.
-*Example: [1, [2, 1, 4, 6, 7], 5, [1, 2, 3, 4], 2, [1, 4, 6, 8, 3], 2, [1, 5], 3] => [1, [4, 6], 5, [2], 2, [4, 6, 8], 2, [], 3]*
+### Duplicate nth element
+Write twice the n-th element of a linear list. \
+*Example: (10 20 30 40 50) and n = 3 => (10 20 30 30 40 50).*
 
-### Subsitute element
-Write a predicate to substitute an element from a list with another element in the list.
+### List to set
+Transform a linear list into a set.
+
+### Path to node
+A binary tree is memorised in the following two ways:
+ 1. (node no-subtrees list-subtree-1 list-subtree-2 ...)
+ 2. (node (list-subtree-1) (list-subtree-2) ...)
+ 
+For a given tree of type 2 return the path from the root node to a certain given node X.
+
+### Replace sublists
+Replace each sublist of a list with its last element.
+
+### Replace tree node
+Define a function that replaces one node with another one in a n-tree represented as: \
+(root list_of_nodes_subtree1... list_of_nodes_subtreen) \
+*Example: tree is (a (b (c)) (d) (e (f))) and node 'b' will be replaced with node 'g' => tree (a (g (c)) (d) (e (f))).*
+
+### Vector dot product
+Write a function to return the [dot product](https://en.wikipedia.org/wiki/Dot_product) of two vectors. 
