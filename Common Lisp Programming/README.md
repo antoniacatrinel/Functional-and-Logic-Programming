@@ -29,7 +29,7 @@ Write twice the n-th element of a linear list. \
 *Example: (10 20 30 40 50) and n = 3 => (10 20 30 30 40 50).*
 
 ### 7. List to set
-Transform a linear list into a set.
+Transform a linear list into a set (no duplicate elements).
 
 ### 8. Path to node
 A binary tree is memorised in the following two ways:
