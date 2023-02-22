@@ -10,7 +10,7 @@ Create from a list of numbers, a list of pairs (N, Count), where Count is the nu
 *Example: [11, 22, 11, 22, 11, 33, 11] => [[11, 4], [22, 2], [33, 1]].*
 
 ### 3. Longest even sequence
-Define a predicate to determine the longest sequence of consecutive even numbers (if exist more maximal sequences one of them).
+Define a predicate to determine the longest sequence of consecutive even numbers (if exist more maximal sequences one of them). 
 
 ### 4. Lowest common multiple
 Given a numerical linear list consisting of integers, write a predicate to compute the lowest common multiple of all elements from the list. \
@@ -27,4 +27,4 @@ For a heterogeneous list, formed from integer numbers and lists of numbers, defi
 *Example: [1, [2, 1, 4, 6, 7], 5, [1, 2, 3, 4], 2, [1, 4, 6, 8, 3], 2, [1, 5], 3] => [1, [4, 6], 5, [2], 2, [4, 6, 8], 2, [], 3]*
 
 ### 8. Subsitute element
-Write a predicate to substitute an element from a list with another element in the list.
+Write a predicate to substitute an element from a list with another element from the list.
